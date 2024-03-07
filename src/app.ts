@@ -1,4 +1,11 @@
-import fs from 'fs';
+/*
+ * https://www.typescriptlang.org/docs/handbook/modules/reference.html#export--and-import--require
+ * CommonJS requires should be replaced with 'import = require()' syntax in typescript, so you can get the types correctly
+ * const fs = require('fs') => import fs = require('fs')
+ */
+
+// import fs = require('fs') // CommonJS require
+const fs = require('fs'); // ES Module import
 
 function sum(a: number, b: number) {
   return a + b;
