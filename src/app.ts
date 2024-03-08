@@ -15,8 +15,15 @@ try {
   const n1: number = 1;
   const hi = 'hi';
 
-  console.log(hi.replaceAll('h', 'a'));
+  const car = {
+    model: 'fiat',
+    year: 2024,
+  };
 
+  const model = car.model;
+  const year = car.year;
+
+  console.log(hi.replaceAll('h', 'a'));
   console.log(hi);
   console.log(n1);
 
