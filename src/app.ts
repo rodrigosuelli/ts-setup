@@ -4,18 +4,15 @@
  * const fs = require('fs') => import fs = require('fs')
  */
 
-// import fs = require('fs') // CommonJS require
-const fs = require('fs'); // ES Module import
-
-function sum(a: number, b: number) {
-  return a + b;
-}
+// import fs = require('fs') // Typescript compatible Require
+import fs from 'fs'; // ES Module import
+import { sum } from './utils/sum';
 
 try {
   fs.appendFileSync('mynewfile1.txt', 'Hello content!');
   console.log('Saved!');
 
-  let n1: number = 1;
+  const n1: number = 1;
   const hi = 'hi';
 
   console.log(hi.replaceAll('h', 'a'));
