@@ -3,7 +3,12 @@
     "es2021": true,
     "node": true
   },
-  "extends": "xo",
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended-type-checked",
+    "plugin:@typescript-eslint/stylistic-type-checked",
+    "xo"
+  ],
   "overrides": [
     {
       "extends": ["xo-typescript", "prettier"],
@@ -15,16 +20,12 @@
     "sourceType": "module"
   },
   "rules": {
-    "no-unused-vars": "off",
-    "no-console": "off",
-    "operator-assignment": "error",
     "no-plusplus": [
       "error",
       {
         "allowForLoopAfterthoughts": true
       }
     ],
-    "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/no-unused-vars": [
       "warn",
       {
