@@ -12,9 +12,7 @@ try {
   fs.appendFileSync('mynewfile1.txt', 'Hello content!');
   console.log('Saved!');
 
-  const n1 = 1;
-  let n1123 = 1;
-  n1123 += 1;
+  const n1: number = 1;
   const hi = 'hi';
 
   const car = {
@@ -22,8 +20,8 @@ try {
     year: 2024,
   };
 
-  const { model } = car;
-  const { year } = car;
+  const model = car.model;
+  const year = car.year;
 
   console.log(hi.replaceAll('h', 'a'));
   console.log(hi);
