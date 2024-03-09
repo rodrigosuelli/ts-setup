@@ -8,13 +8,9 @@
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended-type-checked",
     "plugin:@typescript-eslint/stylistic-type-checked",
-    "xo"
-  ],
-  "overrides": [
-    {
-      "extends": ["xo-typescript", "prettier"],
-      "files": ["*.ts", "*.tsx"]
-    }
+    "xo",
+    "xo-typescript/space",
+    "prettier"
   ],
   "parserOptions": {
     "ecmaVersion": "latest",
@@ -27,6 +23,8 @@
         "allowForLoopAfterthoughts": true
       }
     ],
+    "@typescript-eslint/naming-convention": "off",
+    "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
     "@typescript-eslint/no-unused-vars": [
       "warn",
       {
