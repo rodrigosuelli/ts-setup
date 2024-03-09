@@ -37,6 +37,7 @@
         "destructuredArrayIgnorePattern": "^_",
         "ignoreRestSiblings": true
       }
-    ]
+    ],
+    "no-await-in-loop": "off"
   }
 }
